@@ -57,14 +57,16 @@ class IndependentReserve
     /**
      * Constructor
      *
-     * @param mixed $apiKey
-     * @param mixed $apiSecret
+     * @param string|null $apiKey
+     * @param string|null $apiSecret
      * @param \GuzzleHttp\Client $client
      */
     public function __construct($apiKey = null, $apiSecret = null, HttpClient $client = null, $baseUrl = null)
     {
-        $this->apiKey = $apiKey;
-        $this->apiSecret = $apiSecret;
+        if (! is_null($apiKey) && ! is_null($apiSecret)) {
+            $this->withAuthentication($apiKey, $apiSecret);
+        }
+
         $this->client = $client ?? static::newHttpClient();
 
         if (! is_null($baseUrl)) {

@@ -60,4 +60,20 @@ trait Authentication
 
         return $res;
     }
+
+    /**
+     * Set the authentication credentials to use when making calls to API
+     *
+     * @param string $apiKey
+     * @param string $apiSecret
+     *
+     * @return self
+     */
+    public function withAuthentication($apiKey, $apiSecret)
+    {
+        $this->apiKey = $apiKey;
+        $this->apiSecret = $apiSecret;
+
+        return $this;
+    }
 }
