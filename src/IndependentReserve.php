@@ -41,8 +41,8 @@ class IndependentReserve
      * @var array  THe map of currency min volume
      */
     protected $volumeMin = [
-        'Xbt' => 0.001, 'Xrp' => 10, 'Eth' => 0.01, 'Eos' => 1, 'Bch' => 0.001, 'Ltc' => 0.01,
-        'Xlm' => 10, 'Bat' => 10, 'Omg' => 1, 'Rep' => 0.1, 'Zrx' => 1, 'Gnt' => 10, 'Pla' => 500,
+        'Xbt' => 0.0001, 'Xrp' => 1, 'Eth' => 0.001, 'Eos' => 0.1, 'Bch' => 0.001, 'Ltc' => 0.01,
+        'Xlm' => 10, 'Bat' => 1, 'Omg' => 1, 'Zrx' => 1, 'Gnt' => 10,
     ];
 
     /**
@@ -50,8 +50,7 @@ class IndependentReserve
      */
     protected $volumeDecimals = [
         'Xbt' => 8, 'Xrp' => 6, 'Eth' => 8, 'Eos' => 4, 'Bch' => 8, 'Ltc' => 8,
-        'Xlm' => 5, 'Bat' => 5, 'Omg' => 8, 'Rep' => 4, 'Zrx' => 8, 'Gnt' => 5,
-        'Pla' => 8,
+        'Xlm' => 5, 'Bat' => 5, 'Omg' => 8, 'Zrx' => 8, 'Gnt' => 5,
     ];
 
     /**
