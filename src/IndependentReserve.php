@@ -38,19 +38,23 @@ class IndependentReserve
     protected static $baseUri = 'https://api.independentreserve.com';
 
     /**
-     * @var array  THe map of currency min volume
+     * @var array  The map of currency min volume
      */
     protected $volumeMin = [
         'Xbt' => 0.0001, 'Xrp' => 1, 'Eth' => 0.001, 'Eos' => 0.1, 'Bch' => 0.001, 'Ltc' => 0.01,
         'Xlm' => 10, 'Bat' => 1, 'Omg' => 1, 'Zrx' => 1, 'Gnt' => 10, 'Dot' => 0.1, 'Link' => 0.1,
+        'Usdt' => 1,
     ];
 
     /**
-     * @var array THe map of currency decimals
+     * @see https://api.independentreserve.com/Public/GetOrderMinimumVolumes
+     *
+     * @var array The map of currency decimals
      */
     protected $volumeDecimals = [
         'Xbt' => 8, 'Xrp' => 6, 'Eth' => 8, 'Eos' => 4, 'Bch' => 8, 'Ltc' => 8,
         'Xlm' => 5, 'Bat' => 5, 'Omg' => 8, 'Zrx' => 8, 'Gnt' => 5, 'Dot' => 4, 'Link' => 4,
+        'Usdt' => 5,
     ];
 
     /**
