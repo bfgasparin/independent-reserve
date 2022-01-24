@@ -18,6 +18,7 @@ trait PublicMethods
         'GetValidOrderTypes',
         'GetValidTransactionTypes',
         'GetMarketSummary',
+        'GetOrderMinimumVolumes',
         'GetOrderBook',
         'GetAllOrders',
         'GetTradeHistorySummary',
