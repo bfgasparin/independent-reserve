@@ -43,9 +43,12 @@ class IndependentReserve
      * @var array  The map of currency min volume
      */
     protected $volumeMin = [
-        'Xbt' => 0.0001, 'Xrp' => 1, 'Eth' => 0.001, 'Eos' => 0.1, 'Bch' => 0.001, 'Ltc' => 0.01,
-        'Xlm' => 10, 'Bat' => 1, 'Omg' => 1, 'Zrx' => 1, 'Gnt' => 10, 'Dot' => 0.1, 'Link' => 0.1,
-        'Usdt' => 1, 'Ada' => 1, 'Usdc' => 1, 'Uni' => 0.1,
+        'Xbt' => 0.0001, 'Bch' => 0.001, 'Eth' => 0.001, 'Ltc' => 0.01,
+        'Xrp' => 1, 'Zrx' => 1, 'Eos' => 0.1, 'Xlm' => 10, 'Bat' => 1,
+        'Usdt' => 1, 'Etc' => 0.01, 'Link' => 0.1, 'Usdc' => 1, 'Mkr' => 0.001,
+        'Dai' => 1, 'Comp' => 0.001, 'Snx' => 0, 'Yfi' => 0.0001, 'Aave' => 0.01,
+        'Grt' => 1, 'Dot' => 0.1, 'Uni' => 0.1, 'Ada' => 1, 'Matic' => 0.1,
+        'Doge' => 1, 'Sol' => 0.01, 'Mana' => 0.1, 'Sand' => 0.1,
     ];
 
     /**
@@ -54,9 +57,12 @@ class IndependentReserve
      * @var array The map of currency decimals
      */
     protected $volumeDecimals = [
-        'Xbt' => 8, 'Xrp' => 6, 'Eth' => 8, 'Eos' => 4, 'Bch' => 8, 'Ltc' => 8,
-        'Xlm' => 5, 'Bat' => 5, 'Omg' => 8, 'Zrx' => 8, 'Gnt' => 5, 'Dot' => 4, 'Link' => 4,
-        'Usdt' => 5, 'Ada' => 4, 'Usdc' => 5, 'Uni' => 5,
+        'Xbt' => 8, 'Bch' => 8, 'Eth' => 8, 'Ltc' => 8,
+        'Xrp' => 5, 'Zrx' => 4, 'Eos' => 4, 'Xlm' => 5, 'Bat' => 5,
+        'Usdt' => 5, 'Etc' => 8, 'Link' => 4, 'Usdc' => 5, 'Mkr' => 8,
+        'Dai' => 5, 'Comp' => 8, 'Snx' => 5, 'Yfi' => 8, 'Aave' => 5,
+        'Grt' => 5, 'Dot' => 5, 'Uni' => 5, 'Ada' => 5, 'Matic' => 5,
+        'Doge' => 5, 'Sol' => 5, 'Mana' => 5, 'Sand' => 5,
     ];
 
     /**
